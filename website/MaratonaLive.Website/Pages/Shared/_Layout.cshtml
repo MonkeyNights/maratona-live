@@ -16,6 +16,7 @@
 </head>
 <body>
     <div class="container mb-4">
+        
         <ul class="nav">
             <li class="nav-item"><a class="nav-link" asp-page="/index">ÍNICIO</a></li>
             @*<li class="nav-item mr-4"><a class="nav-link" asp-page="/content">CONTEÚDO</a></li>*@
@@ -24,9 +25,16 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2019 - Maratona Xamarin Live</p>
+        <footer class="text-center">
+            <hr />
+            <div class="text-center">
+                <a href="https://www.facebook.com/CodeMonkeyNights/" target="_blank">
+                    <img width="80" title="Code Monkey Nigths" alt="Code Monkey Nigths"
+                         class="rounded-circle mb-3"
+                         src="~/images/mkn_logo.png" />
+                </a>
+            </div>
+            <p>&copy; 2019 - Maratona Xamarin Live by Code Monkey Nights</p>
         </footer>
     </div>
     <partial name="_CookieConsentPartial" />
